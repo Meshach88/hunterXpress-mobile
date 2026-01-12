@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     },
     input: {
         borderWidth: 1.5,
-        borderColor: "#f97316",
+        borderColor: "#F17500",
         borderRadius: 10,
         padding: 14,
         marginBottom: 16,
@@ -184,11 +184,11 @@ const styles = StyleSheet.create({
     },
     link: {
         fontSize: 12,
-        color: "#f97316",
+        color: "#F17500",
         textDecorationLine: "underline",
     },
     button: {
-        backgroundColor: "#f97316",
+        backgroundColor: "#F17500",
         padding: 16,
         borderRadius: 10,
         alignItems: "center",

@@ -70,7 +70,8 @@ export default function SignUp() {
   };
 
   return (
-    <ScrollView contentContainerStyle={{ padding: 20 }}>
+    <ScrollView contentContainerStyle={{ padding: 20, flex: 1 }}>
+      <Text style={{ fontWeight: 600, fontSize: 24, textAlign: 'center', margin: 20}}>Create an Account</Text>
       {/* Role Toggle */}
       <View style={{ flexDirection: "row", marginBottom: 20 }}>
         {["User", "Courier"].map((r) => (
@@ -81,12 +82,12 @@ export default function SignUp() {
               flex: 1,
               padding: 12,
               marginHorizontal: 5,
-              backgroundColor: role === r ? "#F97316" : "#fff",
+              backgroundColor: role === r ? "#F17500" : "#fff",
               borderRadius: 8,
               alignItems: "center",
             }}
           >
-            <Text style={{ color: role === r ? "#fff" : "#F97316", fontWeight: "600" }}>
+            <Text style={{ color: role === r ? "#fff" : "#F17500", fontWeight: "600" }}>
               {r}
             </Text>
           </Pressable>
@@ -113,7 +114,7 @@ export default function SignUp() {
         onChange={(v) => handleInputChange("phone", v)}
         rightElement={
           <Pressable onPress={sendOTP} style={{ paddingHorizontal: 8 }}>
-            <Text style={{ color: "#F97316", fontWeight: "600" }}>Send OTP</Text>
+            <Text style={{ color: "#F17500", fontWeight: "600" }}>Send OTP</Text>
           </Pressable>
         }
       />
@@ -216,7 +217,7 @@ export default function SignUp() {
         onPress={handleSignup}
         style={{
           marginTop: 20,
-          backgroundColor: "#F97316",
+          backgroundColor: "#F17500",
           padding: 16,
           alignItems: "center",
           borderRadius: 10,

@@ -36,6 +36,7 @@ export default function SelectField({
                     styles.picker,
                     icon && { paddingLeft: 42 },
                 ]}
+                dropdownIconColor="white"
             >
                 <Picker.Item label={placeholder} value="" />
                 {options.map((option, index) => (
@@ -43,12 +44,12 @@ export default function SelectField({
                 ))}
             </Picker>
 
-            <Ionicons
+            {/* <Ionicons
                 name="chevron-down"
                 size={20}
                 color="#9ca3af"
                 style={styles.rightIcon}
-            />
+            /> */}
         </View>
     );
 }
