@@ -4,19 +4,19 @@
     "slug": "hunterXpress",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.svg",
+    "icon": "./assets/icons/favicon.png",
     "scheme": "hunterxpress",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.meshach88.hunterXpress"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFFFFF",
         "foregroundImage": "",
         "backgroundImage": "",
-        "monochromeImage": ""
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
@@ -31,9 +31,8 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
+          "image": "./assets/images/hunter-splash-icon.png",
+          "resizeMode": "cover",
           "backgroundColor": "#ffffff",
           "dark": {
             "backgroundColor": "#000000"
